@@ -6,7 +6,7 @@ const mongoose = require("mongoose";
 
 const app = express();
 
-app.use(express,static("public"));
+app.use(express.static("public"));
 
 //Specify tha connection pathway to get us to the Database we want to connect to
 mongoose.connect("mongodb://localhost:27017/jobsDB");
